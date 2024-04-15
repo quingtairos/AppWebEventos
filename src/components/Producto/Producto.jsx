@@ -1,4 +1,4 @@
-import './Producto.css';
+import './Producto.css'; 
 
     const Producto = () => {
         /* return (
