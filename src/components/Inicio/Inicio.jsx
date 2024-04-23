@@ -1,5 +1,7 @@
 import '/Inicio.css';
 
+import './components/GestionEventosPagina/GestionEventosPagina';
+
     const Inicio = () => {
         /* const productosDestacados = [
             { id: 1, nombre: 'Producto 1', precio: 20.99 },
