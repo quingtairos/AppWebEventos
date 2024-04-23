@@ -1,4 +1,4 @@
-import '/Inicio.css';
+import './Inicio.css';
 
 import GestionEventosPagina from '../GestionEventosPagina/GestionEventosPagina';
 
