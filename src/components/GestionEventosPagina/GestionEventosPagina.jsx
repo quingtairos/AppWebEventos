@@ -30,8 +30,7 @@ import './GestionEventosPagina.css';
                  
              </div>
 
-            <div className='productosDestacados'>
-                <h2>Productos destacados</h2>
+
                 {/* <div className='productosDestacadosContenedor'>
 
                     {productosDestacados.map((producto) => (
@@ -80,8 +79,6 @@ import './GestionEventosPagina.css';
               Servicio de Catterin
             </p>
             </div>
-
-        </div>
 
         </div>
     )
