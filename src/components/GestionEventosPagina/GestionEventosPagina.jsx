@@ -1,6 +1,6 @@
 import './GestionEventosPagina.css';
 
-import Producto from './Producto';
+//import Producto from '../Producto/Producto';
 
     const GestionEventosPagina = () => {
 

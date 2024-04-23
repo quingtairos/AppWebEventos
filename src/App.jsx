@@ -1,7 +1,7 @@
+import './App.css';
 import { useState } from 'react'
 /* import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg' */
-import './App.css'
 import Inicio from './components/Inicio/Inicio';
 
 /* function App() {
@@ -33,7 +33,7 @@ import Inicio from './components/Inicio/Inicio';
   )
 } */
 const App = () => {
-  return (
+  //return (
     <div className="App">
       {/* <h1>Hola </h1>
       <p>
@@ -42,7 +42,7 @@ const App = () => {
       <Inicio />
     </div>
     
-        )
+        //)
 
 
 }
