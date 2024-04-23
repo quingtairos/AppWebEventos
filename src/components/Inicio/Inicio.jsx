@@ -1,6 +1,6 @@
 import '/Inicio.css';
 
-import './components/GestionEventosPagina/GestionEventosPagina';
+import GestionEventosPagina from '../GestionEventosPagina/GestionEventosPagina';
 
     const Inicio = () => {
         /* const productosDestacados = [
@@ -11,12 +11,12 @@ import './components/GestionEventosPagina/GestionEventosPagina';
             { id: 5, nombre: 'Producto 5', precio: 25.99 }
         ] */
         return(
-            <div className="inicio">
+            <div className="Inicio">
                 {/* Contenido */
                     <GestionEventosPagina />
                 }
-                <h1>Bienvenido a AppWebEventos</h1>
-                <h2>Sitio de gestión de eventos</h2>
+                {/* <h1>Bienvenido a AppWebEventos</h1>
+                <h2>Sitio de gestión de eventos</h2> */}
 {/*                 <p>Aquí podrás ver los eventos que se han creado y gestionarlos.</p>
                 <p>Si quieres ver los productos destacados, haz click en el botón "Productos destacados".</p>
                 <p>Si quieres ver los productos más vendidos, haz click en el botón "Productos más vendidos".</p>
