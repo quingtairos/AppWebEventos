@@ -3,6 +3,7 @@ import { useState } from 'react'
 /* import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg' */
 import Inicio from './components/Inicio/Inicio';
+import Header from './components/Header';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -43,7 +44,7 @@ const App = () => {
         ¡Bienvenido a AppWebEventos!
       </p> */}
       <Inicio />
-      
+
       <Header />
     </div>
     
