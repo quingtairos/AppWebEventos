@@ -1,4 +1,5 @@
 import './GestionEventosPagina.css';
+import {Link} from 'react-router-dom';
 
 //import Producto from '../Producto/Producto';
 
@@ -49,8 +50,8 @@ import './GestionEventosPagina.css';
                     <div key={producto.id} className="producto">
                         <h3>{producto.nombre}</h3>
                         <p>Precio: ${producto.precio}</p>
-                        {/* <a href={`/detalles/${producto.id}`}>Ver detalles</a> */}
-                        <Link to={`/detalles/${producto.id}`}>Ver detalles</Link>
+                        <a href={`/detalles/${producto.id}`}>Ver detalles</a>
+                        {/*<Link to={`/detalles/${producto.id}`}>Ver detalles</Link> */}
                     </div>
                     ))}
                 </div>

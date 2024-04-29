@@ -33,7 +33,7 @@ import Inicio from './components/Inicio/Inicio';
   )
 } */
 const App = () => {
-  //return (
+  return (
     <div className="App">
       {/* <h1>Hola </h1>
       <p>
@@ -42,7 +42,7 @@ const App = () => {
       <Inicio />
     </div>
     
-        //)
+        )
 
 
 }
