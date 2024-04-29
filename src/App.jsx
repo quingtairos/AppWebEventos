@@ -43,6 +43,8 @@ const App = () => {
         ¡Bienvenido a AppWebEventos!
       </p> */}
       <Inicio />
+      
+      <Header />
     </div>
     
         )
