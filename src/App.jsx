@@ -4,6 +4,9 @@ import { useState } from 'react'
 import viteLogo from '/vite.svg' */
 import Inicio from './components/Inicio/Inicio';
 
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
 /* function App() {
   const [count, setCount] = useState(0)
 
