@@ -5,6 +5,8 @@ import viteLogo from '/vite.svg' */
 import Inicio from './components/Inicio/Inicio';
 import Header from './components/Header';
 
+import { useInRouterContext } from 'react-router-dom';
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
@@ -36,8 +38,11 @@ import * as ReactDOM from 'react-dom';
     </>
   )
 } */
+
+declare function useInRouterContext(): boolean;
 const App = () => {
   return (
+    useInRouterContext() && useInRouterContext()) || false;
     <div className="App">
       {/* <h1>Hola </h1>
       <p>
@@ -47,6 +52,8 @@ const App = () => {
 
       <Header />
     </div>
+
+    
     
         )
 
