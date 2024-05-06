@@ -13,6 +13,13 @@ import * as ReactDOM from 'react-dom';
   document.getElementById('root')
 ); */
 
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+} from 'react-router-dom';
+
 const App = () => {
   return (
     <div className="App">
