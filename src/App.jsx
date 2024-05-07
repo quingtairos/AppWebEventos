@@ -21,11 +21,22 @@ import {
 } from 'react-router-dom';
 
 const App = () => {
-  return (
+  return <BrowserRouter>
+
     <div className="App">
-      <Inicio />
       <Header />
-    </div> )
+      <Routes>
+        <Route path="">
+          {/* <Navigate to="/" /> */}
+          <Route path='/' element={<Navigate to="/inicio"/>} />{/* </Route> */}
+
+        </Route>
+      </Routes>
+      <Inicio />
+      
+    </div> 
+
+    </BrowserRouter>
 }
 
 export default App;
