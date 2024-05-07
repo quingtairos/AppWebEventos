@@ -43,3 +43,9 @@
   color: #888;
 }
  */
+
+ .profile {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
