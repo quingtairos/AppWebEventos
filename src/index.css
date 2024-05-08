@@ -15,7 +15,7 @@
 
 *{
   box-sizing: border-box;
-  line-height: 1.5;
+  /*line-height: 1.5;*/
   color-scheme: light dark;
   color: white;
   padding: 0;
