@@ -36,9 +36,11 @@ const App = () => {
          {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
           <Route path='/inicio' element={Inicio}></Route>
 
+
         </Route>
       </Routes>
       <Inicio />
+      <Footer />
       
     </div> 
 
