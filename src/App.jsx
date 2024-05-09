@@ -3,6 +3,7 @@ import Inicio from './components/Inicio/Inicio';
 import Header from './components/Header';
 //import { productos } from './data/productos';
 //import Producto from './components/Producto';
+import Footer from './components/Footer/Footer';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
