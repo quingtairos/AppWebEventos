@@ -26,7 +26,6 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import Producto from './components/Producto/Producto';
 
 const App = () => {
   //const productos, setProductos = React.useState([]);
