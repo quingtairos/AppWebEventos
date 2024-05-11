@@ -4,6 +4,10 @@ import Header from './components/Header';
 //import { productos } from './data/productos';
 //import Producto from './components/Producto';
 import Footer from './components/Footer/Footer';
+import Producto from './components/Producto/Producto';
+
+//import { useState } from 'react';
+
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -25,6 +29,8 @@ import {
 import Producto from './components/Producto/Producto';
 
 const App = () => {
+  //const productos, setProductos = React.useState([]);
+  //const productos, setProductos = useState([]);
 
   return <BrowserRouter>
 
@@ -37,7 +43,7 @@ const App = () => {
           {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
          {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
           <Route path='/inicio' element={Inicio}></Route>
-          <Route path='/productos' element={Producto}></Route>
+          <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
 
 
         </Route>
