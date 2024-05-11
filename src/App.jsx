@@ -22,6 +22,7 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
+import Producto from './components/Producto/Producto';
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
           {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
          {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
           <Route path='/inicio' element={Inicio}></Route>
+          <Route path='/productos' element={Producto}></Route>
 
 
         </Route>
