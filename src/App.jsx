@@ -6,6 +6,9 @@ import Header from './components/Header';
 import Footer from './components/Footer/Footer';
 import Producto from './components/Producto/Producto';
 
+//import user-circle from './images/user-circle.png';
+//import fest from './assets/img/fest.jpeg';
+
 //import { useState } from 'react';
 
 

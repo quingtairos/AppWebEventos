@@ -1,6 +1,8 @@
 import './GestionEventosPagina.css';
 import {Link} from 'react-router-dom';
 
+import fest from './assets/img/fest.jpeg';
+
 import * as React from 'react';
 
 //import Producto from '../Producto/Producto';
@@ -68,7 +70,9 @@ import * as React from 'react';
             {/* <br /> */}
             <p>
               {/* <image src="../../assets/img/fest.jpeg" alt="festivales" /> */}
+              <a href="../../assets/img/fest.jpeg" alt="festivales">
               <img src="../../assets/img/fest.jpeg" alt="festivales" />
+              </a>
               FESTIVALES
               <br />
               <small>de todo tipo</small>
