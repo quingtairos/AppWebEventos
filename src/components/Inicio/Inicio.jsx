@@ -17,6 +17,7 @@ import GestionEventosPagina from '../GestionEventosPagina/GestionEventosPagina';
                 {/* Contenido */
                     <GestionEventosPagina />
                 }
+                
                 {/* <h1>Bienvenido a AppWebEventos</h1>
                 <h2>Sitio de gestión de eventos</h2> */}
 {/*                 <p>Aquí podrás ver los eventos que se han creado y gestionarlos.</p>
