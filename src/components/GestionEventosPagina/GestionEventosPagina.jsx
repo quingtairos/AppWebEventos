@@ -1,7 +1,7 @@
 import './GestionEventosPagina.css';
 import {Link} from 'react-router-dom';
 
-//import fest from './assets/img/fest.jpeg';
+import fest from './assets/img/fest.jpeg';
 
 import * as React from 'react';
 
