@@ -66,7 +66,7 @@ import * as React from 'react';
                         <h3>{producto.nombre}</h3>
                         <p>Precio: ${producto.precio}</p>
                         <a href={`/detalles/${producto.id}`}>Ver detalles</a>
-                        {/*<Link to={`/detalles/${producto.id}`}>Ver detalles</Link> */}
+                        <Link to={`/detalles/${producto.id}`}>Ver detalles</Link>
                     </div>
                     ))}
                 </div>
