@@ -5,6 +5,7 @@ import Header from './components/Header';
 //import Producto from './components/Producto';
 import Footer from './components/Footer/Footer';
 import Producto from './components/Producto/Producto';
+import DetalleProducto from './components/DetalleProducto/DetalleProducto';
 
 //import user-circle from './images/user-circle.png';
 import fest from './assets/img/fest.jpeg';
