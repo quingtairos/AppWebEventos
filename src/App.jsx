@@ -45,8 +45,10 @@ const App = () => {
           <Route path='/' element={<Navigate to="./components/Inicio/Inicio.jsx"/>} />{/* </Route> */}
           {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
          {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
-          <Route path='/inicio' element={Inicio}></Route>
+          <Route path='/inicio' element={<Inicio />}></Route>
           <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
+          <Route path='/detalles/:productoId' element={<DetalleProducto />} />
+          {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
 
 
         </Route>
