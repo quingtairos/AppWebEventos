@@ -73,13 +73,13 @@ const App = () => {
 
           </Route>
         </Routes>
-        <Inicio />
+        {/* <Inicio /> */}
         <Footer />
         
       </div> 
 
     </BrowserRouter>
-  )
+  );
 
     
 }
