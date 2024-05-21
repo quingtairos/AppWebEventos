@@ -41,8 +41,18 @@ const App = () => {
   //const productos, setProductos = React.useState([]);
   //const productos, setProductos = useState([]);
 
-  return <BrowserRouter>
-
+  //return <BrowserRouter>
+  return (
+    /*<BrowserRouter>
+      <Routes>
+        <Route path="" element={<Header />}>
+          <Route path='/' element={<Inicio />}/>
+          <Route path='/productos' element={<Producto />}/>
+          <Route path='/detalles/:productoId' element={<DetalleProducto />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>*/
+    <BrowserRouter>
     <div className="App">
       <Header />
       <Routes>
@@ -65,6 +75,9 @@ const App = () => {
     </div> 
 
     </BrowserRouter>
+  )
+
+    
 }
 
 export default App;
