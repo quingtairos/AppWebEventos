@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 
 //import { withRouter } from'react-router-dom';
 
-import { useParams } from'react-router-dom';
+//import { useParams } from'react-router-dom';
 
     /* const */ function DetalleProducto({ match }) /* = () => */ {
+
+        //const params = useParams();
         /* return (
             <div className="detalle-producto">
                 <h1>DetalleProducto</h1>

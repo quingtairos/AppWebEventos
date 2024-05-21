@@ -12,18 +12,18 @@ import fest from './assets/img/fest.jpeg';
 
 //import { useState } from 'react';
 
-/* import {
+import {
   BrowserRouter,
   Navigate,
   Route,
   Routes,
-} from 'react-router-dom'; */
+} from 'react-router-dom';
 
-import {
+/* import {
   BrowserRouter,
   Routes,
   Route,
-} from 'react-router-dom';
+} from 'react-router-dom'; */
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
