@@ -2,6 +2,8 @@ import './DetalleProducto.css';
 
 import { Link } from 'react-router-dom';
 
+import { withRouter } from'react-router-dom';
+
     /* const */ function DetalleProducto({ match }) /* = () => */ {
         /* return (
             <div className="detalle-producto">
@@ -92,4 +94,4 @@ import { Link } from 'react-router-dom';
         );
     }
 
-export default DetalleProducto;
+export default tithRouter(DetalleProducto);
