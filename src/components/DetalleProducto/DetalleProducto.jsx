@@ -94,4 +94,4 @@ import { withRouter } from'react-router-dom';
         );
     }
 
-export default tithRouter(DetalleProducto);
+export default withRouter(DetalleProducto);
