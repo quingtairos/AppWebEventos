@@ -1,6 +1,6 @@
 import './App.css';
 import Inicio from './components/Inicio/Inicio';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 //import { productos } from './data/productos';
 //import Producto from './components/Producto';
 import Footer from './components/Footer/Footer';
@@ -12,6 +12,18 @@ import fest from './assets/img/fest.jpeg';
 
 //import { useState } from 'react';
 
+/* import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+} from 'react-router-dom'; */
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -24,12 +36,6 @@ import * as ReactDOM from 'react-dom';
   document.getElementById('root')
 ); */
 
-import {
-  BrowserRouter,
-  Navigate,
-  Route,
-  Routes,
-} from 'react-router-dom';
 
 const App = () => {
   //const productos, setProductos = React.useState([]);
