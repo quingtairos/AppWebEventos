@@ -2,7 +2,9 @@ import './DetalleProducto.css';
 
 import { Link } from 'react-router-dom';
 
-import { withRouter } from'react-router-dom';
+//import { withRouter } from'react-router-dom';
+
+import { useParams } from'react-router-dom';
 
     /* const */ function DetalleProducto({ match }) /* = () => */ {
         /* return (
@@ -94,4 +96,4 @@ import { withRouter } from'react-router-dom';
         );
     }
 
-export default withRouter(DetalleProducto);
+export default /* withRouter (*/DetalleProducto/*)*/;
