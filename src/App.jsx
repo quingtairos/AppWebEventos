@@ -53,26 +53,27 @@ const App = () => {
       </Routes>
     </BrowserRouter>*/
     <BrowserRouter>
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path="">
-          {/* <Navigate to="/" /> */}
-          <Route path='/' element={<Navigate to="./components/Inicio/Inicio.jsx"/>} />{/* </Route> */}
-          {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
-         {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
-          <Route path='/inicio' element={<Inicio />}></Route>
-          <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
-          <Route path='/detalles/:productoId' element={<DetalleProducto />} />
-          {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="">
+            {/* <Navigate to="/" /> */}
+            <Route path='/' element={<Navigate to="./components/Inicio/Inicio.jsx"/>} />{/* </Route> */}
+            <Route path="/" element={<Inicio />} />
+            {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
+          {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
+            <Route path='/inicio' element={<Inicio />}></Route>
+            <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
+            <Route path='/detalles/:productoId' element={<DetalleProducto />} />
+            {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
 
 
-        </Route>
-      </Routes>
-      <Inicio />
-      <Footer />
-      
-    </div> 
+          </Route>
+        </Routes>
+        <Inicio />
+        <Footer />
+        
+      </div> 
 
     </BrowserRouter>
   )
