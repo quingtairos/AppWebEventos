@@ -2,13 +2,23 @@ import './DetalleProducto.css';
 
 import { Link } from 'react-router-dom';
 
+import { useParams } from 'react-router-dom';
+
+
 //import { withRouter } from'react-router-dom';
 
 //import { useParams } from'react-router-dom';
 
-    /* const */ function DetalleProducto({ match }) /* = () => */ {
+             const DetalleProducto = () => {
+    /* const */ /*function DetalleProducto({ match }) /* = () => */ //{
 
-        //const params = useParams();
+        const params = useParams();
+
+        if (!params) {
+            // Manejar el caso en el que params no está definido
+            return <div>El parámetro no está definido.</div>;
+          }
+        
         /* return (
             <div className="detalle-producto">
                 <h1>DetalleProducto</h1>

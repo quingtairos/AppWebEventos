@@ -1,14 +1,14 @@
 import './App.css';
-import Inicio from './components/Inicio/Inicio';
 import Header from './components/Header/Header';
+import Inicio from './components/Inicio/Inicio';
 //import { productos } from './data/productos';
 //import Producto from './components/Producto';
-import Footer from './components/Footer/Footer';
-import Producto from './components/Producto/Producto';
 import DetalleProducto from './components/DetalleProducto/DetalleProducto';
+import Footer from './components/Footer/Footer';
+import GestionEventosPagina from './components/GestionEventosPagina/GestionEventosPagina';
+import Producto from './components/Producto/Producto';
 
 //import user-circle from './images/user-circle.png';
-import fest from './assets/img/fest.jpeg';
 
 //import { useState } from 'react';
 
@@ -26,7 +26,6 @@ import {
 } from 'react-router-dom'; */
 
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 
 /* ReactDOM.render(
   <React.StrictMode>
@@ -59,7 +58,7 @@ const App = () => {
           <Route path="">
             {/* <Navigate to="/" /> */}
             <Route path='/' element={<Navigate to="./components/Inicio/Inicio.jsx"/>} />{/* </Route> */}
-            <Route path="/" element={<Inicio />} />
+            {/* <Route path="/" element={<Inicio />} /> */}
             {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
           {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
             <Route path='/inicio' element={<Inicio />}></Route>
