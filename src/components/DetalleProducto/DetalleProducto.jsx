@@ -9,8 +9,8 @@ import { useParams } from 'react-router-dom';
 
 //import { useParams } from'react-router-dom';
 
-             const DetalleProducto = () => {
-    /* const */ /*function DetalleProducto({ match }) /* = () => */ //{
+             /*const DetalleProducto = () => {*/
+    /* const */ function DetalleProducto({ match }) /* = () => */ {
 
         const params = useParams();
 
