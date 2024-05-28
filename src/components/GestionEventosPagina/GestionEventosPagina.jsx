@@ -65,7 +65,8 @@ import * as React from 'react';
                     <div key={producto.id} className="producto">
                         <h3>{producto.nombre}</h3>
                         <p>Precio: ${producto.precio}</p>
-                        <a href={`/detalles/${producto.id}`}>Ver detalles</a>
+                        {/* Enlace a la página de detalles del producto */}
+                        {/* <a href={`/detalles/${producto.id}`}>Ver detalles</a> */}
                         <Link to={`/detalles/${producto.id}`}>Ver detalles</Link>
                     </div>
                     ))}
