@@ -14,6 +14,8 @@ import GestionEventosPagina from './components/GestionEventosPagina/GestionEvent
 
 import Login from './components/Login/Login';
 
+import Carrito from './components/Carrito/Carrito';
+
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
