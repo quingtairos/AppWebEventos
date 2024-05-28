@@ -18,7 +18,20 @@ import { useParams } from 'react-router-dom';
             // Manejar el caso en el que params no está definido
             return <div>El parámetro no está definido.</div>;
           }
-        
+
+          if (objeto && objeto.params) {
+            // Accede a la propiedad 'params' aquí
+            const parametro = objeto.params.parametroEspecifico;
+            // Utiliza el parámetro específico obtenido
+          } else {
+            // Maneja el caso en el que el objeto o la propiedad 'params' sean 'undefined'
+            // Por ejemplo, muestra un mensaje de error o redirige a otra página
+            return <div>El parámetro no está definido.</div>;
+          }
+          
+          
+          
+
         /* return (
             <div className="detalle-producto">
                 <h1>DetalleProducto</h1>

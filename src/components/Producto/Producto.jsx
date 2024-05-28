@@ -1,4 +1,6 @@
-import './Producto.css'; 
+import './Producto.css';
+
+import DetalleProducto from '../DetalleProducto';
 
     const Producto = () => {
 
