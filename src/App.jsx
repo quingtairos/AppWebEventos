@@ -4,7 +4,6 @@ import Inicio from './components/Inicio/Inicio';
 //import Producto from './components/Producto';
 import DetalleProducto from './components/DetalleProducto/DetalleProducto';
 import Footer from './components/Footer/Footer';
-import GestionEventosPagina from './components/GestionEventosPagina/GestionEventosPagina';
 import Producto from './components/Producto/Producto';
 
 //import user-circle from './images/user-circle.png';
@@ -60,7 +59,7 @@ const App = () => {
         <Routes>
           <Route path="">
             {/* <Navigate to="/" /> */}
-            <Route path='/' element={<Navigate to="/Inicio"/>} />{/* </Route> */}
+            <Route path='/' element={<Navigate to="/inicio"/>} />{/* </Route> */}
             {/* <Route path="/" element={<Inicio />} /> */}
            {/*  <Route path='/inicio' element={<Inicio />} /> */}
 
@@ -71,11 +70,11 @@ const App = () => {
             {/* <Route path='/inicio' component={Inicio} />
 
             <Route path="/detalles/:id" component={DetalleProducto} /> */}
-            <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
+            {/* <Route path='/productos' element={Producto/*  productos={productos} */}{/* ></Route> */}
             <Route path="/productos" element={<Producto />} />
             <Route path='/detalles/:productoId' element={<DetalleProducto />} />
-            <Route path="/detalles/:productoId" element={<DetalleProducto />} />
-            <Route path="/gestionEventos" element={<GestionEventosPagina/>} />
+            {/* <Route path="/detalles/:productoId" element={<DetalleProducto />} /> */}
+            {/* <Route path="/gestionEventos" element={<GestionEventosPagina/>} /> */}
             {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
 
 

@@ -1,5 +1,5 @@
-import  './Header.css';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
 
     const Header = () => {
         /* return (
@@ -12,11 +12,11 @@ import { NavLink } from 'react-router-dom';
             <header>
                 <nav>
                     <ul>
-                        <li><NavLink to="../Inicio/Inicio.jsx">Inicio</NavLink></li>
+                        <li><NavLink to="/inicio">Inicio</NavLink></li>
                         <li><NavLink to={"/productos"}>Eventos</NavLink></li>
                         {/* <li><a href="/sobreNos">Acerca de</a></li>
                         <li><NavLink to={"/users"}>Usuarios</NavLink></li> */}
-                        <img src="../../assets/img/user-circle.png" alt="" />
+                        <img src="../../assets/img/user-circle.png" alt="icono/imagen de perfil" />
                         <ul>
                             <li><NavLink to={"../Login/Login.jsx"}>Iniciar Sesión</NavLink></li>
                             <li><NavLink to={"../Registro/Registro.jsx"}>Registrate</NavLink></li>
