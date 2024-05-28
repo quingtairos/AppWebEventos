@@ -6,19 +6,24 @@ import { useParams } from 'react-router-dom';
 
 import React from 'react';
 
-import
+import { useState } from 'react';
 //import { withRouter } from'react-router-dom';
 //import { useParams } from'react-router-dom';
+
+
 /*const DetalleProducto = () => {*/
 /* const */ function DetalleProducto({ match }) {
 
         //const producto = match.producto;
         const params = useParams();
 
+        const [objeto, setObjeto] = useState(null);
+
+
         if (objeto) {
-            // Utiliza la variable objeto aquí
+            // Utilizar la variable objeto aquí
         } else {
-            // Maneja el caso en el que objeto no esté definido
+            // Manejar el caso en el que objeto no está definido
         }
 
 
