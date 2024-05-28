@@ -139,7 +139,7 @@ import { useEffect } from 'react';
 
           // Obtener información del producto desde la base de datos o datos de prueba
         const producto = {
-            id: 1,//id
+            id: id,//1,
             nombre: 'Producto ' + id,
             precio: 25.99,
             descripcion: 'Descripción del producto ' + id,
