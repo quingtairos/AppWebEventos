@@ -1,5 +1,6 @@
 import './Carrito.css';
 
+import * as React from 'react';
 
     const Carrito = () => {
        /*  return (
