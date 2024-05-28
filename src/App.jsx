@@ -8,7 +8,7 @@ import Producto from './components/Producto/Producto';
 
 //import user-circle from './images/user-circle.png';
 
-//import { useState } from 'react';
+import { useState } from 'react';
 
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -42,6 +42,8 @@ const App = () => {
   //const productos, setProductos = React.useState([]);
   //const productos, setProductos = useState([]);
 
+  const [productos, setProductos] = useState([]);
+
   //return <BrowserRouter>
   return (
     /*<BrowserRouter>
@@ -56,22 +58,22 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Header />
+
         <Routes>
           <Route path="">
             {/* <Navigate to="/" /> */}
             <Route path='/' element={<Navigate to="/inicio"/>} />{/* </Route> */}
             {/* <Route path="/" element={<Inicio />} /> */}
             
-            {/*<Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />
-          {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
+            <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />
             <Route path='/inicio' element={<Inicio />} />{/* </Route> */}
             {/* <Route path='/inicio' component={Inicio} />
 
             <Route path="/detalles/:id" component={DetalleProducto} /> */}
             {/* <Route path='/productos' element={Producto/*  productos={productos} */}{/* ></Route> */}
             <Route path="/productos" element={<Producto />} />
+            <Route path="/productos" element={<Producto productos={productos} />} />
             <Route path='/detalles/:productoId' element={<DetalleProducto />} />
-            {/* <Route path="/detalles/:productoId" element={<DetalleProducto />} /> */}
             {/* <Route path="/gestionEventos" element={<GestionEventosPagina/>} /> */}
             {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
 
