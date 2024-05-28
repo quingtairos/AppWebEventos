@@ -136,8 +136,10 @@ import { useEffect } from 'react';
                 <Link to={match.url + "/eliminar"}>Eliminar</Link>
             </div>
         ) */
+
+          // Obtener información del producto desde la base de datos o datos de prueba
         const producto = {
-            id: 1,
+            id: 1,//id
             nombre: 'Producto ' + id,
             precio: 25.99,
             descripcion: 'Descripción del producto ' + id,
@@ -162,11 +164,13 @@ import { useEffect } from 'react';
                 <p>Precio: ${producto.precio}</p>
                 <p>{producto.descripcion}</p>
 
+      {/* Verificar si el usuario está autenticado */}
                 <div className='acciones'>
                     {/*  <Link to={}></Link> */}
                     {/* <Link to={match.url + "/editar"}>Editar</Link> */}
                     {/* Verificar si el usuario está autenticado */}
                     <Link to="/Login">Iniciar Sesión {/* para Comprar */}</Link>
+                    {/* <Link to="/iniciar-sesion">Iniciar Sesión para Comprar</Link> */}
                     {/* <Link to="/productos">Volver a productos</Link>
         <Link to={`/productos/${id}/editar`}>Editar</Link>
         <Link to={`/productos/${id}/eliminar`}>Eliminar</Link>
