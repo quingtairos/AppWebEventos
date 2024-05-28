@@ -57,18 +57,9 @@ import { useEffect } from 'react';
             return <div>Cargando...</div>;
         }
 
-       /* if (objeto) {
-            return <div>{/* Renderiza el objeto aquí */ /*objeto.property}</div>;
-          } else {
-            return <div>No se pudo obtener el objeto.</div>;
-          }*/
-        
-
-
-
         if (objeto) {
             // Utilizar la variable objeto aquí
-            return <div>{objeto.property}</div>;
+            return <div>{/* Renderiza el objeto aquí */objeto.property}</div>;
         } else {
             // Manejar el caso en el que objeto no está definido
             //return <div>Cargando...</div>;//mostrar mensaje de carga
@@ -91,27 +82,28 @@ import { useEffect } from 'react';
             return <div>El parámetro no está definido.</div>;
         }*/
 
-
-
-
-        /* return (
-            <div className="detalle-producto">
-                <h1>DetalleProducto</h1>
-            </div>
-        ) */
-        /*return (
-            <div className="detalle-producto">
-                <h1>DetalleProducto</h1>
-                <Link to="/productos">Volver a productos</Link>
-            </div>
-        )*/
-        /* return (
-            <div className="detalle-producto">
-                <h1>DetalleProducto</h1>
-                <Link to={match.url + "/productos"}>Volver a productos</Link>
-            </div>
-        ) */
         const { id } = match.params;
+
+          // Obtener información del producto desde la base de datos o datos de prueba
+          const producto = {
+            id: id,//1,
+            nombre: 'Producto ' + id,
+            precio: 25.99,
+            descripcion: 'Descripción del producto ' + id,
+            /* imagen: 'https://picsum.photos/200/300',
+            stock: 10,
+            idCategoria: 1,
+            nombreCategoria: 'Categoria 1',
+            idMarca: 1,
+            nombreMarca: 'Marca 1',
+            idProveedor: 1, */
+        };
+
+            // Lógica para agregar el producto al carrito
+            const agregarAlCarrito = () => {
+                // Implementar lógica para agregar el producto al carrito
+                console.log(`Producto ${producto.nombre} agregado al carrito.`);
+            };
 
         /* return (
             <div className="detalle-producto">
@@ -137,20 +129,23 @@ import { useEffect } from 'react';
             </div>
         ) */
 
-          // Obtener información del producto desde la base de datos o datos de prueba
-        const producto = {
-            id: id,//1,
-            nombre: 'Producto ' + id,
-            precio: 25.99,
-            descripcion: 'Descripción del producto ' + id,
-            /* imagen: 'https://picsum.photos/200/300',
-            stock: 10,
-            idCategoria: 1,
-            nombreCategoria: 'Categoria 1',
-            idMarca: 1,
-            nombreMarca: 'Marca 1',
-            idProveedor: 1, */
-        };
+        /* return (
+            <div className="detalle-producto">
+                <h1>DetalleProducto</h1>
+            </div>
+        ) */
+        /*return (
+            <div className="detalle-producto">
+                <h1>DetalleProducto</h1>
+                <Link to="/productos">Volver a productos</Link>
+            </div>
+        )*/
+        /* return (
+            <div className="detalle-producto">
+                <h1>DetalleProducto</h1>
+                <Link to={match.url + "/productos"}>Volver a productos</Link>
+            </div>
+        ) */
 
         return (
             <div className="detallesProducto">
@@ -160,14 +155,16 @@ import { useEffect } from 'react';
             <p>Nombre: {producto.nombre}</p>
             <p>Precio: {producto.precio}</p>
             <p>Descripción: {producto.descripcion}</p> */}
+            {/* <img src="{producto.imagen}" alt="producto" /> */}
                 <h2>{producto.nombre}</h2>
                 <p>Precio: ${producto.precio}</p>
                 <p>{producto.descripcion}</p>
 
-      {/* Verificar si el usuario está autenticado */}
+        {/* Verificar si el usuario está autenticado */}
                 <div className='acciones'>
                     {/*  <Link to={}></Link> */}
                     {/* <Link to={match.url + "/editar"}>Editar</Link> */}
+                    <button onClick={agregarAlCarrito}>Agregar al Carrito</button>
                     {/* Verificar si el usuario está autenticado */}
                     <Link to="/Login">Iniciar Sesión {/* para Comprar */}</Link>
                     {/* <Link to="/iniciar-sesion">Iniciar Sesión para Comprar</Link> */}
