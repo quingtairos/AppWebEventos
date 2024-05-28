@@ -7,6 +7,9 @@ import { useParams } from 'react-router-dom';
 import React from 'react';
 
 import { useState } from 'react';
+
+import { useEffect } from 'react';
+
 //import { withRouter } from'react-router-dom';
 //import { useParams } from'react-router-dom';
 
@@ -15,19 +18,65 @@ import { useState } from 'react';
 /* const */ function DetalleProducto({ match }) {
 
         //const producto = match.producto;
+
+        
+
         const params = useParams();
 
         const [objeto, setObjeto] = useState(null);
 
+        const [loading, setLoading] = useState(true);
+
+
+        // Ejemplo de useEffect para obtener y actualizar el objeto
+        /* useEffect(() => {
+            // Lógica para obtener el objeto, por ejemplo, una llamada a una API
+            const objetoFromAPI = fetchObjetoFromAPI();
+            setObjeto(objetoFromAPI);
+        }, []); // El segundo parámetro [] indica que este efecto se ejecuta solo una vez al montar el componente
+        */
+
+        useEffect(() => {
+            const fetchObjetoFromAPI = async () => {
+              // Lógica para obtener el objeto desde la API
+              try {
+                const response = await fetch('https://console.firebase.google.com/u/0/project/app-auth-web/firestore/databases/-default-/data/~2FProductos~2FdVg6eFpdqc8cFJNBCaED');
+                const data = await response.json();
+                setObjeto(data);
+                setLoading(false);
+              } catch (error) {
+                console.error('Error al obtener el objeto desde la API', error);
+                setLoading(false);
+              }
+            };
+
+            fetchObjetoFromAPI();
+        }, []);
+
+        if (loading) {
+            return <div>Cargando...</div>;
+        }
+
+       /* if (objeto) {
+            return <div>{/* Renderiza el objeto aquí */ /*objeto.property}</div>;
+          } else {
+            return <div>No se pudo obtener el objeto.</div>;
+          }*/
+        
+
+
 
         if (objeto) {
             // Utilizar la variable objeto aquí
+            return <div>{objeto.property}</div>;
         } else {
             // Manejar el caso en el que objeto no está definido
+            //return <div>Cargando...</div>;//mostrar mensaje de carga
+            return <div>No se pudo obtener el objeto.</div>;
         }
 
 
-        if (!params) {
+        /*if (!params) {
             // Manejar el caso en el que params no está definido
             return <div>El parámetro no está definido.</div>;
         }
@@ -40,7 +89,7 @@ import { useState } from 'react';
             // Maneja el caso en el que el objeto o la propiedad 'params' sean 'undefined'
             // Por ejemplo, muestra un mensaje de error o redirige a otra página
             return <div>El parámetro no está definido.</div>;
-        }
+        }*/
 
 
 

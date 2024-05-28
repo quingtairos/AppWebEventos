@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import './GestionEventosPagina.css';
-import {Link} from 'react-router-dom';
 
 //import fest from './assets/img/fest.jpeg';
 
