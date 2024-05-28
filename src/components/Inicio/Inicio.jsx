@@ -1,5 +1,6 @@
 import './Inicio.css';
 
+import React from 'react';
 //import fest from './assets/img/fest.jpeg';
 
 import GestionEventosPagina from '../GestionEventosPagina/GestionEventosPagina';

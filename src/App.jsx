@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Inicio from './components/Inicio/Inicio';
-//import { productos } from './data/productos';
 //import Producto from './components/Producto';
 import DetalleProducto from './components/DetalleProducto/DetalleProducto';
 import Footer from './components/Footer/Footer';
@@ -11,6 +10,8 @@ import Producto from './components/Producto/Producto';
 //import user-circle from './images/user-circle.png';
 
 //import { useState } from 'react';
+
+
 
 import {
   BrowserRouter,
@@ -57,9 +58,12 @@ const App = () => {
         <Routes>
           <Route path="">
             {/* <Navigate to="/" /> */}
-            <Route path='/' element={<Navigate to="./components/Inicio/Inicio.jsx"/>} />{/* </Route> */}
+            <Route path='/' element={<Navigate to="/Inicio"/>} />{/* </Route> */}
             {/* <Route path="/" element={<Inicio />} /> */}
-            {/*  <Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />*/}
+           {/*  <Route path='/inicio' element={<Inicio />} /> */}
+
+            
+            {/*<Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />
           {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
             <Route path='/inicio' element={<Inicio />}></Route>
             <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
