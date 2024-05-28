@@ -4,33 +4,41 @@ import { Link } from 'react-router-dom';
 
 import { useParams } from 'react-router-dom';
 
+import React from 'react';
 
+import
 //import { withRouter } from'react-router-dom';
-
 //import { useParams } from'react-router-dom';
+/*const DetalleProducto = () => {*/
+/* const */ function DetalleProducto({ match }) {
 
-             /*const DetalleProducto = () => {*/
-    /* const */ function DetalleProducto({ match }) /* = () => */ {
-
+        //const producto = match.producto;
         const params = useParams();
+
+        if (objeto) {
+            // Utiliza la variable objeto aquí
+        } else {
+            // Maneja el caso en el que objeto no esté definido
+        }
+
 
         if (!params) {
             // Manejar el caso en el que params no está definido
             return <div>El parámetro no está definido.</div>;
-          }
+        }
 
-          if (objeto && objeto.params) {
+        if (objeto && objeto.params) {
             // Accede a la propiedad 'params' aquí
             const parametro = objeto.params.parametroEspecifico;
             // Utiliza el parámetro específico obtenido
-          } else {
+        } else {
             // Maneja el caso en el que el objeto o la propiedad 'params' sean 'undefined'
             // Por ejemplo, muestra un mensaje de error o redirige a otra página
             return <div>El parámetro no está definido.</div>;
-          }
-          
-          
-          
+        }
+
+
+
 
         /* return (
             <div className="detalle-producto">
@@ -91,34 +99,34 @@ import { useParams } from 'react-router-dom';
         return (
             <div className="detallesProducto">
                 {/* <h1>DetalleProducto</h1>
-                <Link to="/productos">Volver a productos</Link>
-                <p>id: {id}</p>
-                <p>Nombre: {producto.nombre}</p>
-                <p>Precio: {producto.precio}</p>
-                <p>Descripción: {producto.descripcion}</p> */}
+            <Link to="/productos">Volver a productos</Link>
+            <p>id: {id}</p>
+            <p>Nombre: {producto.nombre}</p>
+            <p>Precio: {producto.precio}</p>
+            <p>Descripción: {producto.descripcion}</p> */}
                 <h2>{producto.nombre}</h2>
                 <p>Precio: ${producto.precio}</p>
                 <p>{producto.descripcion}</p>
 
                 <div className='acciones'>
-                   {/*  <Link to={}></Link> */}
+                    {/*  <Link to={}></Link> */}
                     {/* <Link to={match.url + "/editar"}>Editar</Link> */}
-                     {/* Verificar si el usuario está autenticado */}
+                    {/* Verificar si el usuario está autenticado */}
                     <Link to="/Login">Iniciar Sesión {/* para Comprar */}</Link>
                     {/* <Link to="/productos">Volver a productos</Link>
-                <Link to={`/productos/${id}/editar`}>Editar</Link>
-                <Link to={`/productos/${id}/eliminar`}>Eliminar</Link>
-                <Link to="/productos/nuevo">Nuevo</Link>
-                <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link> */}
-                {/* <Link to="/contacto">Contacto</Link>
-                <Link to="/acercade">Acerca de</Link>
-                <Link to="/productos/1">Producto 1</Link>
-                <Link to="/productos/2">Producto 2</Link> */}
+        <Link to={`/productos/${id}/editar`}>Editar</Link>
+        <Link to={`/productos/${id}/eliminar`}>Eliminar</Link>
+        <Link to="/productos/nuevo">Nuevo</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Register</Link> */}
+                    {/* <Link to="/contacto">Contacto</Link>
+            <Link to="/acercade">Acerca de</Link>
+            <Link to="/productos/1">Producto 1</Link>
+            <Link to="/productos/2">Producto 2</Link> */}
                 </div>
             </div>
-                
+
         );
-    }
+    };
 
 export default /* withRouter (*/DetalleProducto/*)*/;
