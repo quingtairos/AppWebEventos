@@ -10,6 +10,10 @@ import Producto from './components/Producto/Producto';
 
 import { useState } from 'react';
 
+import GestionEventosPagina from './components/GestionEventosPagina/GestionEventosPagina';
+
+import Login from './components/Login/Login';
+
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -76,6 +80,8 @@ const App = () => {
             <Route path='/detalles/:productoId' element={<DetalleProducto />} />
             <Route path="/gestionEventos" element={<GestionEventosPagina/>} />
             {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
+
+            <Route path="/iniciarsesion" element={<Login />} />
 
 
           </Route>
