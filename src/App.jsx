@@ -11,6 +11,8 @@ import Producto from './components/Producto/Producto';
 
 //import { useState } from 'react';
 
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 
 import {
@@ -65,7 +67,10 @@ const App = () => {
             
             {/*<Route path="/inicio" element={<Inicio productos={productos.slice(0, 5)} />} />
           {/*  <Route path="/productos" element={<Producto productos={productos} />} /> */}
-            <Route path='/inicio' element={<Inicio />}></Route>
+            <Route path='/inicio' element={<Inicio />} />{/* </Route> */}
+            {/* <Route path='/inicio' component={Inicio} />
+
+            <Route path="/detalles/:id" component={DetalleProducto} /> */}
             <Route path='/productos' element={Producto/*  productos={productos} */}></Route>
             <Route path="/productos" element={<Producto />} />
             <Route path='/detalles/:productoId' element={<DetalleProducto />} />
