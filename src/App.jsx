@@ -16,6 +16,14 @@ import Login from './components/Login/Login';
 
 import Carrito from './components/Carrito/Carrito';
 
+//import React from 'react';
+//import logo from './logo.png'; // Tell webpack this JS file uses this image
+
+/* import fest from './assets/img/fest.png';
+
+console.log(fest); */ // /logo.84287d09.png
+
+
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -49,6 +57,9 @@ const App = () => {
   //const productos, setProductos = useState([]);
 
   const [productos, setProductos] = useState([]);
+
+  // Import result is the URL of your image
+  //return <img src={fest} alt="fest" />;
 
   //return <BrowserRouter>
   return (
@@ -96,6 +107,8 @@ const App = () => {
       </div> 
 
     </BrowserRouter>
+
+    
   );
 
     
