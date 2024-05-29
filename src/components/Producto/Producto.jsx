@@ -2,6 +2,8 @@ import './Producto.css';
 
 import * as React from 'react';
 
+import { useState } from 'react';
+
 import DetalleProducto from '../DetalleProducto';
 
     //const Producto = () => {
