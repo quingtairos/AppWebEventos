@@ -1,5 +1,7 @@
 import './Login.css';
 
+import Footer from '../Footer';
+
 /* const Login = () => { */
     function Login() {
           // Lógica de inicio de sesión
@@ -19,6 +21,9 @@ import './Login.css';
           
         </div>
       );
+
+      <Footer />  
+      //include <Footer /> in the render method;
 
 } 
 

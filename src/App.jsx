@@ -97,6 +97,7 @@ const App = () => {
 
 
             <Route path="/iniciarsesion" element={<Login />} />
+            <Route path="/footer" element={<Footer />} />
 
 
           </Route>
@@ -107,6 +108,7 @@ const App = () => {
       </div> 
 
     </BrowserRouter>
+    
 
     
   );

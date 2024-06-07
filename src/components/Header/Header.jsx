@@ -1,5 +1,11 @@
-import { NavLink } from 'react-router-dom';
 import './Header.css';
+
+import { NavLink } from 'react-router-dom';
+
+import user-circle from "../assets/img/user-circle.png";
+
+
+
 
     const Header = () => {
         /* return (
@@ -16,6 +22,8 @@ import './Header.css';
                         <li><NavLink to={"/productos"}>Eventos</NavLink></li>
                         {/* <li><a href="/sobreNos">Acerca de</a></li>
                         <li><NavLink to={"/users"}>Usuarios</NavLink></li> */}
+                        <img src={value === user-circle } alt="" />
+
                         <img src="../../assets/img/user-circle.png" alt="icono/imagen de perfil" />
                         <ul>
                             <li><NavLink to={"../Login/Login.jsx"}>Iniciar Sesión</NavLink></li>
