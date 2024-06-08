@@ -3,4 +3,9 @@ footer {
     background-color: lightgray;
     /* padding: 10px; */
     margin-bottom: auto;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    left: 0;
 }
