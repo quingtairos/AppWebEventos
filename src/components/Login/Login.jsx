@@ -1,6 +1,5 @@
 import './Login.css';
 
-import Footer from '../Footer';
 
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -81,7 +80,7 @@ const SIGN_IN_WITH_GOOGLE = /* async */ () => {
             </div>
             <div>
                 <label>Email:</label>
-                <input type="email" value={email} onChange={(evento) => setEmail(evento.target.value)} />
+                <input type="email" name='email' value={email} onChange={(evento) => setEmail(evento.target.value)} />
             </div>
             <div>
                 <label>Contraseña:</label>
@@ -100,7 +99,7 @@ const SIGN_IN_WITH_GOOGLE = /* async */ () => {
         </div>
       );
 
-      <Footer />  
+      //<Footer />  
       //include <Footer /> in the render method;
 
 } 
