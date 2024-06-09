@@ -14,6 +14,8 @@ import DetalleProducto from '../DetalleProducto';
         //const productosPorPag = 5;
 
         const [productos, setProductos] = useState([]); // Estado para almacenar los productos
+        const [pagina, setPagina] = useState(1); // Estado para almacenar la página actual
+        //const [cargando, setCargando] = useState(false);
         //const [productosPorPagina, setProductosPorPagina] = useState(productosPorPag);
 
         const [filtroCategoria, setFiltroCategoria] = useState(''); // Estado para el filtro de categoría
