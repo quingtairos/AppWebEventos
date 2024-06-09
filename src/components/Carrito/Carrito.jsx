@@ -3,6 +3,7 @@ import './Carrito.css';
 import * as React from 'react';
 
     const Carrito = () => {
+        //function carrito() { 
        /*  return (
             <div className="carrito">
                 <h1>Carrito</h1>
