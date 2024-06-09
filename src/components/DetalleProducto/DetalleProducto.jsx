@@ -11,13 +11,15 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 //import { withRouter } from'react-router-dom';
-//import { useParams } from'react-router-dom';
 
 
 /*const DetalleProducto = () => {*/
 /* const */ function DetalleProducto({ match }) {
 
         //const producto = match.producto;
+
+       /*const [producto, setProducto] = match.params;
+       const [productoEnCarrito, setProductoEnCarrito] = useState([]);*/
 
         
 
