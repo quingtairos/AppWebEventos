@@ -53,7 +53,7 @@ import DetalleProducto from '../DetalleProducto';
 
 
         return (
-            <div className="producto">
+            <div className="productos">
                 {/* <h1>Producto</h1> */}
                  {/* Barra de filtros y búsqueda */}
                 <div className='busqueda'>
@@ -76,8 +76,15 @@ import DetalleProducto from '../DetalleProducto';
                 </div>
                 <button onClick={() => detalleProducto()}>Ver detalle</button>
                 <DetalleProducto />
+
+                {/* Paginación */}
+                {/* <div className="paginacion">
+                    {Array.from({ length: Math.ceil(productosFiltrados.length / productosPorPagina) }, (_, index) => (
+                    <button key={index + 1} onClick={() => cambiarPagina(index + 1)}>{index + 1}</button>
+                    ))}
+                </div> */}
             </div>
-        )
+        );
 
         /*  const detalleProducto = () => {
             return <DetalleProducto />
