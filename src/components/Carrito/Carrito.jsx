@@ -31,7 +31,7 @@ import * as React from 'react';
                 {productosEnCarrito.length === 0 ? (
                     <p>El carrito está vacío.</p>
                 ) : (
-                    <>
+                    //<>
                     <div className="listaproductos">
                         {productosEnCarrito.map((producto) => (
                             <div key={producto.id} className="productoEncarrito">
@@ -42,10 +42,10 @@ import * as React from 'react';
                             </div>
                         ))}
                     </div>
-                    {/*  solo los usuarios logueados  */}
-                    <p>PrecioTotal: ${calcularPrecioTotal()}</p>
+                    /* solo los usuarios logueados */
+                    /* <p>PrecioTotal: ${calcularPrecioTotal()}</p> */
 
-                    </>
+                    //</>
                 )}
             </div>
         );
