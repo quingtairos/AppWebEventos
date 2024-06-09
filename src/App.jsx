@@ -16,6 +16,9 @@ import Login from './components/Login/Login';
 
 import Carrito from './components/Carrito/Carrito';
 
+import Registro from './components/Registro/Registro';
+
+
 //import React from 'react';
 //import logo from './logo.png'; // Tell webpack this JS file uses this image
 
@@ -97,6 +100,9 @@ const App = () => {
 
 
             <Route path="/iniciarsesion" element={<Login />} />
+            <Route path='/registrarse' element={<Registro />}/>
+            {/* <Route path="/registro" element={<Registro />} /> */}
+
             <Route path="/footer" element={<Footer />} />
 
 
