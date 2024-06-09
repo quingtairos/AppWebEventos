@@ -45,6 +45,12 @@ import DetalleProducto from '../DetalleProducto';
             const indiceFinal = indiceInicial + productosPorPagina;
             const productosPaginados = productosFiltrados.slice(indiceInicial, indiceFinal);
 
+             // Lógica para cambiar de página
+            const cambiarPagina = (numeroPagina) => {
+                setPaginaActual(numeroPagina);
+                // agregar lógica adicional aquí, como desplazarse(scroll) hacia arriba de la página
+            };
+
 
         return (
             <div className="producto">
