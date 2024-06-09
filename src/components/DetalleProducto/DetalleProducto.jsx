@@ -168,7 +168,7 @@ import { useEffect } from 'react';
                     {/* <Link to={match.url + "/editar"}>Editar</Link> */}
                     <button onClick={agregarAlCarrito}>Agregar al Carrito</button>
                     {/* Verificar si el usuario está autenticado */}
-                    <Link to="/Login">Iniciar Sesión {/* para Comprar */}</Link>
+                    <Link to="/iniciarsesion">Iniciar Sesión {/* para Comprar */}</Link>
                     {/* <Link to="/iniciar-sesion">Iniciar Sesión para Comprar</Link> */}
                     {/* <Link to="/productos">Volver a productos</Link>
         <Link to={`/productos/${id}/editar`}>Editar</Link>
