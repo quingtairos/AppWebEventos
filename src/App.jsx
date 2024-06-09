@@ -18,6 +18,13 @@ import Carrito from './components/Carrito/Carrito';
 
 import Registro from './components/Registro/Registro';
 
+import app from './firebase';
+import { getAuth, } from './firebase/auth';
+
+//import { useAuthState } from'react-firebase-hooks/auth';
+
+const auth = getAuth(app);
+
 
 //import React from 'react';
 //import logo from './logo.png'; // Tell webpack this JS file uses this image
