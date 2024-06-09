@@ -28,12 +28,22 @@ import { NavLink } from 'react-router-dom';
 
                         <img src="../../assets/img/user-circle.png" alt="icono/imagen de perfil" />
                         <ul>
-                            <li><NavLink to={"../Login/Login.jsx"}>Iniciar Sesión</NavLink></li>
+                            {/* <li><NavLink to={"../Login/Login.jsx"}>Iniciar Sesión</NavLink></li> */}
+                            <li><NavLink to="/iniciarsesion">Iniciar Sesión</NavLink></li>
                             <li><NavLink to={"../Registro/Registro.jsx"}>Registrate</NavLink></li>
                         </ul>
                         {/* <li><NavLink to={"../GestionEventosPagina/GestionEventosPagina.jsx"}>Eventos2</NavLink></li> */}
                     </ul>
                 </nav>
+
+                {/* <nav>
+                    <ul>
+                        <li><NavLink to="/">Inicio</NavLink></li>
+                        <li><NavLink to="/productos">Productos</NavLink></li>
+                        <li><NavLink to="/carrito">Carrito</NavLink></li>
+                        <li><NavLink to="/iniciarsesion">Iniciar Sesión</NavLink></li>
+                    </ul>
+                </nav> */}
             </header>
         )
         {
