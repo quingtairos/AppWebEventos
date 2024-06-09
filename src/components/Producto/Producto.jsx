@@ -33,7 +33,7 @@ import DetalleProducto from '../DetalleProducto';
             const productosFiltrados = productos
             .filter(producto => producto.categoria.includes(filtroCategoria))
             .filter(producto => filtroPrecio === '' || producto.precio <= parseInt(filtroPrecio))
-            .filter(producto => busquedaTexto === '' || producto.nombre.toLowerCase().includes(busquedaTexto.toLowerCase()) || producto.descripcion.toLowerCase().includes(busquedaTexto.toLowerCase()));
+            .filter(producto => busqueda === '' || producto.nombre.toLowerCase().includes(busqueda.toLowerCase()) || producto.descripcion.toLowerCase().includes(busqueda.toLowerCase()));
 
             // Actualiza el estado de 'productosFiltrados' con los datos obtenidos
             //setProductosFiltrados(productosFiltrados);
