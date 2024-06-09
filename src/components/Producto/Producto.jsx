@@ -55,8 +55,10 @@ import DetalleProducto from '../DetalleProducto';
         return (
             <div className="producto">
                 {/* <h1>Producto</h1> */}
+                 {/* Barra de filtros y búsqueda */}
                 <div className='busqueda'>
-                    <input placeholder='Buscar producto'/>
+                    {/* Agregar controles de filtro y búsqueda */}
+                    <input type='text' placeholder='Buscar producto' value={busqueda} onChange={(e) => setBusqueda(e.target.value)} />
                 </div>
                 <button onClick={() => detalleProducto()}>Ver detalle</button>
                 <DetalleProducto />
