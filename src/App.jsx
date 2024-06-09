@@ -59,7 +59,6 @@ import * as React from 'react';
 
 const App = () => {
   //const productos, setProductos = React.useState([]);
-  //const productos, setProductos = useState([]);
 
   const [productos, setProductos] = useState([]);
 
@@ -99,7 +98,8 @@ const App = () => {
            {/*  <Route path='/detalles2/:productoId' element={<DetalleProducto productos={productos} />} /> */}
             {/* <Route path='/detalles/:id' element={<DetalleProducto />} /> */}
             <Route path="/gestionEventos" element={<GestionEventosPagina/>} />
-            <Route path="/carrito" component={Carrito} />
+           {/*  <Route path="/carrito" component={Carrito} /> */}
+           <Route path="/carrito" element={<Carrito />} />
             {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
 
 
