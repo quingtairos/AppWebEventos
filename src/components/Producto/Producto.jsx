@@ -59,6 +59,20 @@ import DetalleProducto from '../DetalleProducto';
                 <div className='busqueda'>
                     {/* Agregar controles de filtro y búsqueda */}
                     <input type='text' placeholder='Buscar producto' value={busqueda} onChange={(e) => setBusqueda(e.target.value)} />
+                     {/* Agregar mas controles de filtro y búsqueda */}
+                </div>
+
+                 {/* Lista de productos */}
+                <div className="listaproductos">
+                    {productosPaginados.map((producto) => (
+                    <div key={producto.id} className="producto">
+                        <h3>{producto.nombre}</h3>
+                        <p>Precio: ${producto.precio}</p>
+                        <p>Categoría: {producto.categoria}</p>
+                        <p>Descripción: {producto.descripcion}</p>
+                        <Link to={`/detalles/${producto.id}`}>Ver detalles</Link>
+                    </div>
+                    ))}
                 </div>
                 <button onClick={() => detalleProducto()}>Ver detalle</button>
                 <DetalleProducto />
