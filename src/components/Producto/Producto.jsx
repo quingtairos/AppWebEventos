@@ -35,6 +35,15 @@ import DetalleProducto from '../DetalleProducto';
             .filter(producto => filtroPrecio === '' || producto.precio <= parseInt(filtroPrecio))
             .filter(producto => busquedaTexto === '' || producto.nombre.toLowerCase().includes(busquedaTexto.toLowerCase()) || producto.descripcion.toLowerCase().includes(busquedaTexto.toLowerCase()));
 
+            // Actualiza el estado de 'productosFiltrados' con los datos obtenidos
+            //setProductosFiltrados(productosFiltrados);
+
+            // Paginación: Mostrar 5 productos por página
+            const productosPorPagina = 5;
+            const [paginaActual, setPaginaActual] = useState(1);
+            const indiceInicial = (paginaActual - 1) * productosPorPagina;
+            const indiceFinal = indiceInicial + productosPorPagina;
+            const productosPaginados = productosFiltrados.slice(indiceInicial, indiceFinal);
 
 
         return (
