@@ -21,8 +21,8 @@ import DetalleProducto from '../DetalleProducto';
         //const [busquedaTexto, setBusquedaTexto] = useState(''); // Estado para el campo de búsqueda*/
         const [busqueda, setBusqueda] = useState('');
         const obtenerProductosDesdeBaseDeDatos = () => {
-                // Aquí iría tu lógica para obtener los productos desde la base de datos
-                // Por ejemplo, una llamada a una API o a una base de datos
+                // lógica para obtener los productos desde la base de datos
+                // ejemplo, llamada a una API o a una base de datos
                 // Devuelve los datos obtenidos
                 return [/* tus datos de productos */];
             };
