@@ -8,7 +8,7 @@ import Producto from './components/Producto/Producto';
 
 //import user-circle from './images/user-circle.png';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import GestionEventosPagina from './components/GestionEventosPagina/GestionEventosPagina';
 
@@ -46,6 +46,8 @@ import {
 
 import * as React from 'react';
 
+//import * as ReactDOM from'react-dom';
+
 
 
 /* ReactDOM.render(
@@ -61,6 +63,13 @@ const App = () => {
   //const productos, setProductos = React.useState([]);
 
   const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    fetch('https://console.firebase.google.com/u/0/project/app-auth-web/firestore/databases/-default-/data/~2FProductos~2FdVg6eFpdqc8cFJNBCaED').
+    then(response => response.json()).
+    then(data => setProductos(data));
+})
+
 
   // Import result is the URL of your image
   //return <img src={fest} alt="fest" />;
