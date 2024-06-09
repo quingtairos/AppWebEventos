@@ -94,7 +94,7 @@ const App = () => {
             <Route path="/detalles/:id" component={DetalleProducto} /> */}
             {/* <Route path='/productos' element={Producto/*  productos={productos} */}{/* ></Route> */}
             <Route path="/productos" element={<Producto />} />
-            <Route path="/productos" element={<Producto productos={productos} />} />
+            <Route path="/productos2" element={<Producto productos={productos} />} />
             <Route path='/detalles/:productoId' element={<DetalleProducto />} />
            {/*  <Route path='/detalles2/:productoId' element={<DetalleProducto productos={productos} />} /> */}
             {/* <Route path='/detalles/:id' element={<DetalleProducto />} /> */}
