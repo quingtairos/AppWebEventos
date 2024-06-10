@@ -84,6 +84,8 @@ import { useEffect } from 'react';
             return <div>El parámetro no está definido.</div>;
         }*/
 
+    };
+
         const { id } = match.params;
 
           // Obtener información del producto desde la base de datos o datos de prueba
@@ -107,13 +109,6 @@ import { useEffect } from 'react';
                 console.log(`Producto ${producto.nombre} agregado al carrito.`);
             };
 
-        /* return (
-            <div className="detalle-producto">
-                <h1>DetalleProducto</h1>
-                <Link to="/productos">Volver a productos</Link>
-                <p>id: {id}</p>
-            </div>
-        ) */
         /*  return (
             <div className="detalle-producto">
                 <h1>DetalleProducto</h1>
@@ -130,18 +125,7 @@ import { useEffect } from 'react';
                 <Link to={match.url + "/eliminar"}>Eliminar</Link>
             </div>
         ) */
-
-        /* return (
-            <div className="detalle-producto">
-                <h1>DetalleProducto</h1>
-            </div>
-        ) */
-        /*return (
-            <div className="detalle-producto">
-                <h1>DetalleProducto</h1>
-                <Link to="/productos">Volver a productos</Link>
-            </div>
-        )*/
+        
         /* return (
             <div className="detalle-producto">
                 <h1>DetalleProducto</h1>
@@ -184,6 +168,6 @@ import { useEffect } from 'react';
             </div>
 
         );
-    };
+    //};
 
 export default /* withRouter (*/DetalleProducto/*)*/;
