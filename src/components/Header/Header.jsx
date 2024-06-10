@@ -33,7 +33,7 @@ import * as React from 'react';
                         <ul>
                             {/* <li><NavLink to={"../Login/Login.jsx"}>Iniciar Sesión</NavLink></li> */}
                             <li><NavLink to="/iniciarsesion">Iniciar Sesión</NavLink></li>
-                            <li><NavLink to={"../Registro/Registro.jsx"}>Registrate</NavLink></li>
+                            <li><NavLink to={"/registro"}>Registrate</NavLink></li>
                         </ul>
                         {/* <li><NavLink to={"../GestionEventosPagina/GestionEventosPagina.jsx"}>Eventos2</NavLink></li> */}
                     </ul>
