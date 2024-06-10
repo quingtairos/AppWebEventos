@@ -30,4 +30,4 @@ export const firestore = firebase.firestore();*/
 
 export { auth, db };
 
-//export default app;
+export default app;
