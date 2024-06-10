@@ -84,7 +84,7 @@ import { useEffect } from 'react';
             return <div>El parámetro no está definido.</div>;
         }*/
 
-    };
+    //};
 
         const { id } = match.params;
 
@@ -125,7 +125,7 @@ import { useEffect } from 'react';
                 <Link to={match.url + "/eliminar"}>Eliminar</Link>
             </div>
         ) */
-        
+
         /* return (
             <div className="detalle-producto">
                 <h1>DetalleProducto</h1>
@@ -168,6 +168,6 @@ import { useEffect } from 'react';
             </div>
 
         );
-    //};
+     };
 
 export default /* withRouter (*/DetalleProducto/*)*/;
