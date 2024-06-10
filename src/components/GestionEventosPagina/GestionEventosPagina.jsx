@@ -6,11 +6,9 @@ import './GestionEventosPagina.css';
 //import fest from './assets/img/fest.jpeg';
 
 
-
-
-
-
 import * as React from 'react';
+
+//import { db } from '../../firebase';
 
 //import Producto from '../Producto/Producto';
 
