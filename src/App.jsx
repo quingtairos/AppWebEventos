@@ -1,9 +1,8 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Inicio from './components/Inicio/Inicio';
-//import Producto from './components/Producto';
 import DetalleProducto from './components/DetalleProducto/DetalleProducto';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Inicio from './components/Inicio/Inicio';
 import Producto from './components/Producto/Producto';
 
 //import user-circle from './images/user-circle.png';
@@ -18,12 +17,12 @@ import Carrito from './components/Carrito/Carrito';
 
 import Registro from './components/Registro/Registro';
 
-/*import app from './firebase';
-import { getAuth } from './firebase/auth';*/
+import app from './firebase';
+import { getAuth /*, onAuthStateChanged*/ } from './firebase/auth';
 
 //import { useAuthState } from'react-firebase-hooks/auth';
 
-//const auth = getAuth(app);
+const auth = getAuth(app);
 
 
 //import React from 'react';
@@ -51,6 +50,7 @@ import {
   Route,
 } from 'react-router-dom'; */
 
+import { onAuthStateChanged } from 'firebase/auth';
 import * as React from 'react';
 
 //import * as ReactDOM from'react-dom';
@@ -71,6 +71,21 @@ const App = () => {
 
   const [productos, setProductos] = useState([]);
 
+  const [usuario, setUsuario] = useState(null);
+
+  onAuthStateChanged(auth, (usuarioAuth) => {
+    if (usuarioAuth) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      //const uid = user.uid;
+      setUsuario(usuarioAuth);
+    }
+    else
+    {
+      setUsuario(null);
+    }
+  })
+  
   useEffect(() => {
     fetch('https://console.firebase.google.com/u/0/project/app-auth-web/firestore/databases/-default-/data/~2FProductos').
     then(response => response.json()).
@@ -92,6 +107,8 @@ const App = () => {
         </Route>
       </Routes>
     </BrowserRouter>*/
+    
+
     <BrowserRouter>
       <div className="App">
         <Header />
@@ -133,9 +150,15 @@ const App = () => {
         
       </div> 
 
-    </BrowserRouter>
-    
+      <div>
+     {/* { usuario? <h1>Bienvenido/a {usuario.email}</h1> : <h1>No estas logueado</h1>} */}
+     {usuario ? <GestionEventosPagina correoUsuario = {usuario.email}  /> : <Login /> }
+    </div>
 
+    </BrowserRouter>
+
+     
+    
     
   );
 

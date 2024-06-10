@@ -1,5 +1,8 @@
 import './Title.css';
 
+import * as React from 'react';
+
+
 const Title = () => <h1>Gestion Eventos</h1>; {
   /* return (
     <div className="title">

@@ -2,6 +2,9 @@ import './Header.css';
 
 import { NavLink } from 'react-router-dom';
 
+import * as React from 'react';
+
+
 //import User-circle from "../assets/img/user-circle.png";
 
 

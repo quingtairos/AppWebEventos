@@ -14,14 +14,14 @@ import { useEffect } from 'react';
 
 
 /*const DetalleProducto = () => {*/
-/* const */ function DetalleProducto({ match }) {
+/* const */ function DetalleProducto(/* { match } */) {
 
         //const producto = match.producto;
 
        /*const [producto, setProducto] = match.params;
        const [productoEnCarrito, setProductoEnCarrito] = useState([]);*/
 
-        
+        const { id } = useParams();
 
         const params = useParams();
 
@@ -86,7 +86,7 @@ import { useEffect } from 'react';
 
     //};
 
-        const { id } = match.params;
+        //const { id } = match.params;
 
           // Obtener información del producto desde la base de datos o datos de prueba
           const producto = {
