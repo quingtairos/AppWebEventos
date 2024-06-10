@@ -6,13 +6,14 @@ import { useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
+//import { bd } from '../firebase';
 
 import DetalleProducto from '../DetalleProducto';
 
     //const Producto = () => {
     function Producto() {
 
-        const productosPorPag = 5;
+        //const productosPorPag = 5;
 
         const [productos, setProductos] = useState([]); // Estado para almacenar los productos
         const [pagina, setPagina] = useState(1); // Estado para almacenar la página actual
