@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './GestionEventosPagina.css';
 
+//import { firestore } from '../../firebase';
+
 //import fest from './assets/img/fest.jpeg';
 
 import * as React from 'react';
@@ -10,13 +12,30 @@ import * as React from 'react';
     const GestionEventosPagina = () => {
 
         
-    const productosDestacados = [
+    /*const productosDestacados = [
         { id: 1, nombre: 'Producto 1', precio: 20.99 },
         { id: 2, nombre: 'Producto 2', precio: 15.49 },
         { id: 3, nombre: 'Producto 3', precio: 10.99 },
         { id: 4, nombre: 'Producto 4', precio: 5.49 },
         { id: 5, nombre: 'Producto 5', precio: 25.99 }
-    ];
+    ];*/
+
+        const [productosDestacados, setProductosDestacados] = useState([]);
+      
+        useEffect(() => {
+          const obtenerProductosDestacados = async () => {
+            try {
+              const querySnapshot = await firestore.collection('productos').where('destacado', '==', true).limit(10).get();
+              const productos = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+              setProductosDestacados(productos);
+            } catch (error) {
+              console.error('Error al obtener los productos destacados:', error);
+            }
+          };
+      
+          obtenerProductosDestacados();
+        }, []);
+      
 
     return (
 
