@@ -18,7 +18,7 @@ import * as React from 'react';
         ) */
 
         return (
-            <header>
+            <header className='text-light'>
                 <nav>
                     <ul>
                         {/* <li><a href="/">Inicio</a></li> */}

@@ -15,6 +15,7 @@ li {
 
 a{
     text-decoration-line: none;
+    color: white;
 }
 
 header {
@@ -24,4 +25,5 @@ header {
 
 nav {
     background-color: orange;
+    color: white;
 }
