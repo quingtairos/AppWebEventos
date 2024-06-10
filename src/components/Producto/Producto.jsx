@@ -15,7 +15,7 @@ import DetalleProducto from '../DetalleProducto';
 
         const [productos, setProductos] = useState([]); // Estado para almacenar los productos
         const [pagina, setPagina] = useState(1); // Estado para almacenar la página actual
-        //const [cargando, setCargando] = useState(false);
+        const [cargando, setCargando] = useState(false);
         //const [productosPorPagina, setProductosPorPagina] = useState(productosPorPag);
 
         const [filtroCategoria, setFiltroCategoria] = useState(''); // Estado para el filtro de categoría
@@ -32,11 +32,25 @@ import DetalleProducto from '../DetalleProducto';
 
         // Lógica para obtener productos desde la base de datos o datos de prueba
         useEffect(() => {
+            cargarProductos();
             // Realiza la llamada a la base de datos o utiliza datos de prueba
             // Actualiza el estado de 'productos' con los datos obtenidos
             const datosProductos = obtenerProductosDesdeBaseDeDatos(); // Implementa esta función
             setProductos(datosProductos);
           }, []); // Se ejecuta solo al montar el componente
+
+          const cargarProductos = async () => {
+            // Lógica para obtener los productos desde la base de datos
+            try {
+                // Simula una llamada a la base de datos o API para obtener productos
+                const nuevosProductos = await obtenerProductosDesdeBaseDeDatos(pagina);
+                setProductos(prevProductos => [...prevProductos, ...nuevosProductos]);
+                setPagina(prevPagina => prevPagina + 1);
+                setCargando(false);
+                } catch (error) {
+                console.error('Error al cargar productos:', error);
+                }
+            };
 
           // Lógica para aplicar filtros y búsqueda
             const productosFiltrados = productos
@@ -74,6 +88,7 @@ import DetalleProducto from '../DetalleProducto';
                  {/* Lista de productos */}
                 <div className="listaproductos">
                     {productosPaginados.map((producto) => (
+                    //{productos.map((producto) => (
                     <div key={producto.id} className="producto">
                         <h3>{producto.nombre}</h3>
                         <p>Precio: ${producto.precio}</p>
@@ -83,6 +98,10 @@ import DetalleProducto from '../DetalleProducto';
                     </div>
                     ))}
                 </div>
+
+                  {/* Mensaje de carga */}
+                    {cargando && <p>Cargando más productos...</p>}
+                   {/*  {!cargando && productos.length === 0 && <p>No hay productos para mostrar</p>} */}
                 <button onClick={() => detalleProducto()}>Ver detalle</button>
                 <DetalleProducto />
 
