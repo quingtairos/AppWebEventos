@@ -124,14 +124,12 @@ const App = () => {
             {/* <Route path='/inicio' component={Inicio} />
 
             <Route path="/detalles/:id" component={DetalleProducto} /> */}
-            {/* <Route path='/productos' element={Producto/*  productos={productos} */}{/* ></Route> */}
             <Route path="/productos" element={<Producto />} />
             <Route path="/productos" element={<Producto productos={productos} />} />
             <Route path='/detalles/:productoId' element={<DetalleProducto />} />
            {/*  <Route path='/detalles2/:productoId' element={<DetalleProducto productos={productos} />} /> */}
             {/* <Route path='/detalles/:id' element={<DetalleProducto />} /> */}
             <Route path="/gestionEventos" element={<GestionEventosPagina/>} />
-           {/*  <Route path="/carrito" component={Carrito} /> */}
            <Route path="/carrito" element={<Carrito />} />
             {/* <Route path='/gestionEventos' element={GestionEventosPagina} /> */}
 
