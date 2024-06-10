@@ -152,7 +152,7 @@ const App = () => {
 
       <div>
      {/* { usuario? <h1>Bienvenido/a {usuario.email}</h1> : <h1>No estas logueado</h1>} */}
-     {usuario ? <GestionEventosPagina correoUsuario = {usuario.email}  /> : <Login /> }
+     {/* {usuario ? <GestionEventosPagina correoUsuario = {usuario.email}  /> : <Login /> } */}
     </div>
 
     </BrowserRouter>
