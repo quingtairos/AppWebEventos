@@ -4,19 +4,20 @@ import * as React from 'react';
 
 import { useEffect, useState } from 'react';
 
-//import { db } from '../../firebase';
+import { Link } from 'react-router-dom';
+
 
 import DetalleProducto from '../DetalleProducto';
 
     //const Producto = () => {
     function Producto() {
 
-        //const productosPorPag = 5;
+        const productosPorPag = 5;
 
         const [productos, setProductos] = useState([]); // Estado para almacenar los productos
         const [pagina, setPagina] = useState(1); // Estado para almacenar la página actual
         const [cargando, setCargando] = useState(false);
-        //const [productosPorPagina, setProductosPorPagina] = useState(productosPorPag);
+        //const [productosPorPagina, setProductosPorPagina] = useState(productosPorPagina);
 
         const [filtroCategoria, setFiltroCategoria] = useState(''); // Estado para el filtro de categoría
         const [filtroPrecio, setFiltroPrecio] = useState(''); // Estado para el filtro de precio
