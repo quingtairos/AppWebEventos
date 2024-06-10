@@ -92,7 +92,7 @@ const SIGN_IN_WITH_GOOGLE = /* async */ () => {
             </div>
                 <button type="submit">Iniciar Sesión</button>
                 {/* <a href="../Registro/Registro.jsx">Registrate aquí</a> */}
-                <NavLink to={"../Registro/Registro.jsx"}>Registrate aquí</NavLink>
+                <NavLink to={"/registrarse"}>Registrate aquí</NavLink>
                 <button onClick={SIGN_IN_WITH_GOOGLE} className='google'>
                 Iniciar Sesión con Google
             </button>
