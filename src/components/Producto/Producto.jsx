@@ -4,7 +4,11 @@ import * as React from 'react';
 
 import { useEffect, useState } from 'react';
 
+//import { db } from '../../firebase';
 
+import { app } from '../../firebase';
+
+//import { firestore } from 'firebase/firestore';
 
 import DetalleProducto from '../DetalleProducto';
 
@@ -73,6 +77,24 @@ import DetalleProducto from '../DetalleProducto';
                 setPaginaActual(numeroPagina);
                 // agregar lógica adicional aquí, como desplazarse(scroll) hacia arriba de la página
             };
+
+            const firestore = getFirestore(app);
+            const addEvent = async (event) => {
+            await firestore.addDoc('events', event);
+            };
+
+            firestore.collection('productos').add({
+                nombre: 'Producto 1',
+                precio: 19.99,
+                descripcion: 'Descripción del producto 1'
+              })
+                .then((docRef) => {
+                  // Documento creado correctamente
+                })
+                .catch((error) => {
+                  // Manejo de errores
+                });
+              
 
 
         return (
