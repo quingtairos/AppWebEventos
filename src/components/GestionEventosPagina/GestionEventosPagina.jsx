@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
 import './GestionEventosPagina.css';
 
-//import { firestore } from '../../firebase';
+//import { getFirestore } from '../../firebase';
 
 //import fest from './assets/img/fest.jpeg';
+
+
+
+
+
 
 import * as React from 'react';
 
@@ -92,7 +97,7 @@ import * as React from 'react';
                 </div>
             </div>
 
-             {/* return ( */}
+            
           <h2>{/* Administrar */} Eventos</h2>
         {/* Contenido */}
         <div className="eventos">
