@@ -5,6 +5,8 @@ import * as React from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+//import { auth } from './firebase';
+
 /* const Login = () => { */
     function Login() {
           // Lógica de inicio de sesión

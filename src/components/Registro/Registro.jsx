@@ -8,6 +8,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 import { useState } from 'react';
 
+
 const Registro = () => {
     /* return (
         <div className="registro">
@@ -29,6 +30,15 @@ const Registro = () => {
             console.error('Error al registrar:', error);
           });
       };
+
+      /*auth.createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Usuario registrado correctamente
+  })
+  .catch((error) => {
+    // Manejo de errores
+  });*/
+
 
       return (
         <form onSubmit={handleSubmit}>
