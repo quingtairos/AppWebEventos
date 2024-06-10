@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './GestionEventosPagina.css';
 
+import { useEffect, useState } from 'react';
+
 //import { getFirestore } from '../../firebase';
 
 //import fest from './assets/img/fest.jpeg';
@@ -15,13 +17,13 @@ import * as React from 'react';
     const GestionEventosPagina = () => {
 
         
-    /*const productosDestacados = [
+    const productosDes = [
         { id: 1, nombre: 'Producto 1', precio: 20.99 },
         { id: 2, nombre: 'Producto 2', precio: 15.49 },
         { id: 3, nombre: 'Producto 3', precio: 10.99 },
         { id: 4, nombre: 'Producto 4', precio: 5.49 },
         { id: 5, nombre: 'Producto 5', precio: 25.99 }
-    ];*/
+    ];
 
         const [productosDestacados, setProductosDestacados] = useState([]);
       
@@ -83,7 +85,7 @@ import * as React from 'react';
             <div className='productosDestacados'>
                 <h2>Productos Destacados</h2>
                 <div className="listaproductos">
-                    {productosDestacados.map((producto) => (
+                    {productosDes.map((producto) => (
                     <div key={producto.id} className="producto">
                         <h3>{producto.nombre}</h3>
                         <p>Precio: ${producto.precio}</p>
@@ -121,6 +123,20 @@ import * as React from 'react';
               Servicio de Catterin
             </p>
             </div>
+
+         <h2>Productos destacados</h2>
+      <div>
+        {productosDestacados.map(producto => (
+          <div key={producto.id}>
+            <productosDestacados producto={producto} />
+            {usuarioAutenticado ? (
+              <button>Agregar al carrito</button>
+            ) : (
+              <Link to="/login">Iniciar sesión</Link>
+            )}
+          </div>
+        ))}
+      </div>
 
         </div>
     )
