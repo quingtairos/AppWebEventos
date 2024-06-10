@@ -72,7 +72,7 @@ const App = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    fetch('https://console.firebase.google.com/u/0/project/app-auth-web/firestore/databases/-default-/data/~2FProductos~2FdVg6eFpdqc8cFJNBCaED').
+    fetch('https://console.firebase.google.com/u/0/project/app-auth-web/firestore/databases/-default-/data/~2FProductos').
     then(response => response.json()).
     then(data => setProductos(data));
 })
