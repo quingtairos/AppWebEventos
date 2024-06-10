@@ -71,6 +71,7 @@ const SIGN_IN_WITH_GOOGLE = /* async */ () => {
   }
 
     return (
+      <div className='container'>
         <div className="IniciarSesion">
           <h2>Iniciar Sesión</h2>
           {/* Formulario de inicio de sesión */}
@@ -97,6 +98,7 @@ const SIGN_IN_WITH_GOOGLE = /* async */ () => {
 
           {/* ... */}
           
+        </div>
         </div>
       );
 
