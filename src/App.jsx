@@ -138,7 +138,9 @@ const App = () => {
             <Route path='/registrarse' element={<Registro />}/>
             {/* <Route path="/registro" element={<Registro />} /> */}
 
-            <Route path="/footer" element={<Footer />} />
+            {/* <Route path="/footer" element={<Footer />} /> */}
+
+            <Route path="*" element={<Navigate to="/inicio" />} />
 
 
           </Route>
@@ -148,10 +150,10 @@ const App = () => {
         
       </div> 
 
-      <div>
+      {/* <div>
      {/* { usuario? <h1>Bienvenido/a {usuario.email}</h1> : <h1>No estas logueado</h1>} */}
      {/* {usuario ? <GestionEventosPagina correoUsuario = {usuario.email}  /> : <Login /> } */}
-    </div>
+    {/* </div> */}
 
     </BrowserRouter>
 
