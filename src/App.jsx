@@ -17,8 +17,8 @@ import Carrito from './components/Carrito/Carrito';
 
 import Registro from './components/Registro/Registro';
 
+import { getAuth /*, onAuthStateChanged*/ } from '../firebase/auth';
 import app from './firebase';
-import { getAuth /*, onAuthStateChanged*/ } from './firebase/auth';
 
 //import { useAuthState } from'react-firebase-hooks/auth';
 
