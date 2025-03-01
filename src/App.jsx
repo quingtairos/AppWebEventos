@@ -24,7 +24,6 @@ import app from './firebase';
 
 const auth = getAuth(app);
 
-
 //import React from 'react';
 //import logo from './logo.png'; // Tell webpack this JS file uses this image
 
@@ -34,6 +33,7 @@ console.log(fest); */ // /logo.84287d09.png
 
 
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 
 
@@ -91,6 +91,7 @@ const App = () => {
     then(response => response.json()).
     then(data => setProductos(data));
 })
+
 
 
   // Import result is the URL of your image
